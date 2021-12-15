@@ -5,6 +5,7 @@ api_keys/
 
 # jupyter
 .ipynb_checkpoints/
+**/.ipynb_checkpoints/
 
 # downloaded data
 data/
