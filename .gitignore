@@ -1,2 +1,10 @@
-data/
+# configuration
+.config/
+.vscode/
+
+# jupyter
 .ipynb_checkpoints/
+
+# downloaded data
+data/
+
