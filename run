@@ -1,0 +1,13 @@
+docker build -t cis545 .
+
+docker stop cis545
+docker rm cis545
+docker run -d --name cis545 -p 8888:8888 -p 4040:4040\
+    -v ${PWD}:/home/jovyan/work \
+    -e JUPYTER_CONFIG_DIR=/home/jovyan/work/.config \
+    --gpus all --shm-size="16g" \
+    --user root -e GRANT_SUDO=yes \
+    -e JUPYTER_TOKEN=cis545cis545 cis545 \
+    start.sh jupyter lab --collaborative
+
+docker logs cis545 -f
