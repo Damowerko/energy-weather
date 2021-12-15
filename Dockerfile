@@ -21,4 +21,4 @@ RUN mamba install -y jupyterlab==3.2.5 jupyterlab-lsp python-lsp-server[all] jup
 
 # project specific setup
 RUN mamba install -y geopandas
-RUN pip install -U google-cloud-bigquery pandas_gbq rasterio opencv-python-headless selenium scikit-optimize
+RUN pip install -U google-cloud-bigquery pandas_gbq rasterio opencv-python-headless selenium scikit-optimize gdown
