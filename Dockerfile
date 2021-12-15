@@ -20,5 +20,6 @@ RUN mamba install -y pandas==1.1.5 googledrivedownloader pymongo
 RUN mamba install -y jupyterlab==3.2.5 jupyterlab-lsp python-lsp-server[all] jupyterlab_code_formatter black
 
 # project specific setup
+RUN mamba install -y pytorch -c pytorch
 RUN mamba install -y geopandas
-RUN pip install -U google-cloud-bigquery pandas_gbq rasterio opencv-python-headless selenium scikit-optimize gdown
+RUN pip install -U google-cloud-bigquery pandas_gbq rasterio opencv-python-headless selenium gdown skorch
