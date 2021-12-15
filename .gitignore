@@ -1,6 +1,7 @@
 # configuration
 .config/
 .vscode/
+api_keys/
 
 # jupyter
 .ipynb_checkpoints/
